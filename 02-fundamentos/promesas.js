@@ -33,7 +33,7 @@ let getSalario = (empleado) => {
 
 		let salarioBD = salarios.find(salario => salario.id === empleado.id);
 		if(!salarioBD) reject(`No se encontró un salario para el empleado ${empleado.nombre}`);
-		else 
+		else
 			resolve({
 				nombre: empleado.nombre,
 				salario: salarioBD.salario
